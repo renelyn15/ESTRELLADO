@@ -1,0 +1,113 @@
+/* General body background settings */
+body {
+    background: #d7d4d4 url(backg1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #d6a8a6; /* Light gray background by default */
+    font-family: 'Arial', sans-serif; /* Font for the whole page */
+}
+
+/* Jumbotron (header section) styles */
+.jumbotron {
+    background-color: #6d6666;  /* Add a dark overlay */
+    color: rgb(212, 205, 205);
+    padding: 100px 80px;
+    border-radius: 5px;
+}
+
+/* Heading styling inside jumbotron */
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Paragraph styling inside jumbotron */
+.jumbotron p {
+    font-size: 1.5rem;
+}
+
+/* Table container styles */
+.container {
+    background-color: rgba(186, 154, 154, 0.9);  /* White with slight transparency */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Table styles */
+.table {
+    background-color: #ebcaca;  /* White background for the table */
+    border-radius: 8px;  /* Rounded corners for table */
+    border-collapse: collapse;  /* Ensure borders are collapsed */
+}
+
+/* Table header styles */
+.table th {
+    background-color: #3f3f3f;  /* Bootstrap primary color */
+    color: rgb(183, 173, 173);  /* White text color */
+}
+
+/* Table rows styles */
+.table td {
+    padding: 15px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Style for product image in the table */
+.table img {
+    width: 100px;  /* Limit image width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+/* Button styling for "View" button */
+.btn-primary {
+    background-color: #97a5b6;  /* Matching the table header color */
+    border-color: #8295a9;
+    padding: 10px 20px;
+    border-radius: 5px;  /* Rounded corners */
+    color: rgb(152, 151, 151);
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #8b98a7;  /* Darker shade when hovered */
+    border-color: #7e8c9a;
+}
+
+/* Mobile responsiveness: Adjust image size and text sizes on small screens */
+@media (max-width: 768px) {
+    .table img {
+        width: 100px;  /* Reduce image size on smaller screens */
+    }
+
+    .jumbotron h1 {
+        font-size: 3rem;  /* Adjust font size for mobile */
+    }
+
+    .jumbotron p {
+        font-size: 2rem;  /* Adjust paragraph font size */
+    }
+}
+
+/* Apply button animation */
+@keyframes buttonEffect {
+    0% {
+        transform: scale(1); /* Initial size */
+        background-color: #8d9dad;
+    }
+    50% {
+        transform: scale(1.2); /* Grow the button */
+        background-color: #2f3430; /* Change color */
+    }
+    100% {
+        transform: scale(1); /* Return to normal size */
+        background-color: #b0b0b0; /* Original color */
+    }
+}
+
+/* Add animation to all buttons with the .btn class */
+.btn {
+    animation: buttonEffect 1s ease-in-out infinite; /* Apply animation */
+}
